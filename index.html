@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @font-face {
+            font-family: 'Digital-7 Mono Mono';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Digital-7 Mono Mono'), url('digital-7 (mono).woff') format('woff');
+        }
+
+        .calculator-body { 
+            height: 350px;
+            width: 250px;
+            background-color: #ff99dd;
+            margin: 20px auto;
+            border-radius: 2%;
+            padding: 20px;
+            padding-top: 40px;
+            border: 3px solid black;
+            border-bottom-style: double;
+            border-right-style: double;
+            margin-top: 50px;
+        }
+
+        .scr {
+            background-color: #a1af77;
+            text-align: right;
+            width: 220px;
+            font-size: 30px;
+            display: block;
+            margin: 0 auto;
+            padding: 5px 10px;
+            margin-bottom: 20px;
+            border-radius: 15px 15px 0 0;
+            font-family: 'Digital-7 Mono Mono';
+
+        }
+
+        .button-container {
+            height: 250px;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 2%;
+        }
+
+        .btn {
+            width: 40px;
+            height: 40px;
+            background-color: #b3ecff;
+            text-align: center;
+            font-weight: bold;
+            padding: 2px 0;
+            font-size: 20px;
+            margin: 3px;
+            border-radius: 10%;
+            border-bottom-style: double;
+            border-right-style: double;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 5px 0 black;
+            transition: 0.5s;
+        }
+
+        .btn1 {
+            width: 42px;
+            height: 90px;
+            margin-bottom: 1%;
+            border-radius: 2%;
+            margin: 1%;
+            border-radius: 10%;
+            background-color: #b3ecff;
+            border-bottom-style: double;
+            border-right-style: double;
+            border: 0.5%;
+            cursor: pointer;
+        }
+
+        .btn1:hover {
+            box-shadow: 0 0 5px 0 black;
+            transition: 0.5s;
+        }
+
+        .btn2 {
+            width: 40px;
+            height: 40px;
+            background-color: #b3ecff;
+            text-align: center;
+            font-weight: bold;
+            padding: 2px 0;
+            font-size: 20px;
+            margin: 3px;
+            border-radius: 25%;
+            border-bottom-style: double;
+            border-right-style: double;
+            cursor: pointer;
+        }
+
+        .btn2:hover {
+            box-shadow: 0 0 5px 0 black;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator-body">
+        <input type="text" value="0" class="scr" />
+        <div class="button-container">
+
+            <button class="btn2">ON</button>
+            <button class="btn">7</button>
+            <button class="btn">4</button>
+            <button class="btn">1</button>
+            <button class="btn">0</button>
+
+            <button class="btn2">M+</button>
+            <button class="btn">8</button>
+            <button class="btn">5</button>
+            <button class="btn">2</button>
+            <button class="btn">00</button>
+
+            <button class="btn2">MC</button>
+            <button class="btn">9</button>
+            <button class="btn">6</button>
+            <button class="btn">3</button>
+            <button class="btn">.</button>
+
+            <button class="btn2">MR</button>
+            <button class="btn">%</button>
+            <button class="btn">x</button>
+            <button class="btn1">+</button>
+
+            <button class="btn2">OFF</button>
+            <button class="btn">CE</button>
+            <button class="btn">/</button>
+            <button class="btn">-</button>
+            <button class="btn">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
